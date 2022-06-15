@@ -1,0 +1,36 @@
+<div>
+  <div>
+      <h1 id="TitleMyPostcard">My Postcard</h1>
+      <img src=".learn/assets/4geeks.png" alt="logo4geeks" id="image">
+
+  </div>
+</div>
+<div>
+  <div>
+      <p class="text">Look how awesome! This is a <br>
+         postcard that I created using <br>
+         HTML5 and CSS3 during my <br>
+         4Geeks Academy Course! <br>
+      </p><br>
+      <p class="text">This is so cool, can't wait to <br>
+          start doing more stuff!
+      </p><br>
+  </div>
+
+<div>
+    <form #formContacto="ngForm" (ngSubmit)="OnSubmit(formContacto)" id="container-form">
+        <input type="text" class="form-content" name="nombre" #nombre="ngModel" [(ngModel)]="usuario.nombre" required 
+        id="SomeName" placeholder="Some Name"
+        />
+        
+        <input type="text" class="form-content" name="email" #email="ngModel" [(ngModel)]="usuario.email" required  
+        id="SomeName" placeholder="Some Email"
+        />
+        
+        <textarea class="form-message" name="mensaje" #mensaje="ngModel" [(ngModel)]="usuario.mensaje" required pattern="[a-zA-Z]+"
+        id="SomeName" placeholder="Some Comment"
+        ></textarea>
+
+        <input type="submit" value="Send" class="form-send" [disabled]="!formContacto.form.valid" id="send" id="Sendmypostcard"/>
+       </form>  
+</div>

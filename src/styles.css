@@ -1,0 +1,76 @@
+:root{
+    /* Colors */
+    --black: black;
+    --SoftBlack:#101419;    
+    --TextGray: #3e6aab;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+html{
+   max-width:400px;
+   
+    font-size: 62.5%;
+    font-family: "Noto Sans JP", "sans-serif";
+    background-color: rgb(94, 210, 172);
+
+  }
+#TitleMyPostcard{
+    display:flex;
+    margin-top:60px;
+    padding-left: 120px;
+    font-weight:lighter;
+    font-size: 5.5rem;
+}
+#image{
+  display: flex;
+  position: relative;
+  left:1115px;
+  bottom:140px;
+  height: 145px;
+}
+
+.text{
+  
+  font-size: 2.5rem;
+  display: flex;
+  position: relative;
+  bottom:140px;
+  left:120px;
+}
+#SomeName{
+  background-color: rgb(94, 210, 172);
+  display: flex;
+  position: relative;
+  bottom:400px;
+  left:720px;
+  height: 60px;
+  width: 500px;
+  color: var(--SoftBlack);
+  border: 0;
+  border-bottom:solid 1px var(--TextGray);
+  font-size: 2.3rem;
+}
+#Sendmypostcard{
+  background-color:var(--TextGray);
+  display: flex;
+  position: relative;
+  bottom: 300px;
+  left: 485px;
+  height: 70px;
+  width: 380px;
+  color: black;
+  justify-content: center;
+  font-size: 3.5rem;
+  border: 0;
+}
+#Sendmypostcard:active{
+background-color: rgb(193, 185, 185);
+}
+
+#Sendmypostcard:hover{
+  border: 1px solid var(--TextGray);
+
+}
